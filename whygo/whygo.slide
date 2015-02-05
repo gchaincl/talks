@@ -1,0 +1,54 @@
+Why Go?
+Let's talk about Go!
+4 Feb 2015
+Tags: go golang concurrency typeform
+
+Gustavo Chaín
+Developer at Typeform
+gustavo@typeform.com
+https://github.com/gchaincl
+
+* CPU Evolution
+.image content/cpu_clock_vs_cores.png
+
+* Global Interpreter Lock (GIL)
+.image content/killgil.jpg
+
+* WAT?!
+.image content/wat_js.png
+
+* Simplicity and consistency (tools)
+- Ruby: RVM, rbenv, bundle, gem ?!
+- Python: 2 or 3, pip{2.7}, virtualenv, easy_install (easy?!)
+- PHP
+.image content/wat_implode.png
+- JS: npm, grunt, bower, nvm
+
+* 
+.image content/jsnpm.png
+
+* We (or I at least) Need
+- Concurrent and Parallel
+- Statically typed
+- Provide tools (no npm, rvm, bundle, bower, nvm, grunt, ...)
+- Compiled but, with a dynamic lang workflow (node-gyp, native-extensions)
+- easy to learn / adopt
+
+* 
+.image content/erlcode.png
+
+* 
+.image content/rustcode.png
+
+* Simple Example
+
+.play content/askawesomely/main.go
+
+* Idioms for writting concurrent programs
+* 
+- _Concurrency_is_about_dealing_with_lots_of_things_at_once._Parallelism_is_about_doing_lots_of_things_at_once._
+- _Don't_communicate_by_sharing_memory;_share_memory_by_communicating._
+
+* 
+
+.play content/channels/main.go
