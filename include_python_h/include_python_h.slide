@@ -40,3 +40,8 @@ Start Writing in C, then in Python, then back to C.
 .code content/code/setup.py
 
  python setup.py build_ext --inplace
+
+* References
+.link https://github.com/gchaincl/libxlpy
+.link https://docs.python.org/3/extending/embedding.html
+.link https://docs.python.org/3/extending/windows.html
