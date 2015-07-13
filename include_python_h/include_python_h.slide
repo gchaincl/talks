@@ -1,0 +1,42 @@
+ #include <Python.h>
+The Barcelona Python Meetup Group
+16 Jul 2015
+Tags: python c ffi
+
+Gustavo Chaín
+Developer at Typeform
+gustavo@typeform.com
+https://github.com/gchaincl
+
+* >>> import me
+Who is this guy, by Gustavo Chaín
+
+I'm from Chile
+Start Writing in C, then in Python, then back to C.
+
+* Interoperability
+ is a property of a product or system,
+ whose interfaces are completely understood,
+ to work with other products or systems [wikipedia]
+
+.image content/embedding.png _ 800
+
+* Use Cases
+- Legacy code
+- Wrappers
+- Binding
+- Extensibility
+- Speed
+
+* Embedding
+.code content/code/high_level_embedding.c
+
+ gcc high_level_embedding.c -o high_level_embedding $(python-config --cflags --ldflags)
+
+* Extending
+.code content/code/foo.c
+
+* Building
+.code content/code/setup.py
+
+ python setup.py build_ext --inplace
